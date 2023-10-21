@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"tareagato.tictactoe","l":"Board"},{"p":"tareagato.tictactoe","l":"TareaGatoTictactoe"}];updateSearchResults();

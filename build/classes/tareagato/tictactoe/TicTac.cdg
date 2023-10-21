@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TicTac">
+  <ClassDiagramComponents>
+    <Class name="Board" package="" visibility="public" xPosition="245.0" yPosition="239.0">
+      <Fields>
+        <Field name="board" type="char[][]" visibility="private"/>
+        <Field name="playerOne" type="char" visibility="private"/>
+        <Field name="playerTwo" type="char" visibility="private"/>
+        <Field name="playerOneWins" type="int" visibility="private"/>
+        <Field name="playerTwoWins" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
