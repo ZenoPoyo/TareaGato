@@ -1,36 +1,43 @@
 package tareagato.tictactoe;
-
+/**
+ * Board class
+ * @author migue
+ * @param board
+ * @param playerOne
+ * @param playerTwo
+ * @param playerOneWins
+ * @param playerTwoWins
+ */
 public class Board {
 
-    private char[][] board;
+    public char[][] board;
 
-    private char playerOne;
+    public char playerOne;
 
-    private char playerTwo;
+    public char playerTwo;
 
-    private int playerOneWins;
+    public int playerOneWins;
 
-    private int playerTwoWins;
+    public int playerTwoWins;
 
     public Board(char playerOne, char playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
-        this.board = new char[3][3]; // Matriz 3x3 para el juego de Gato
+        this.board = new char[3][3]; 
         initializeBoard();
         playerOneWins = 0;
         playerTwoWins = 0;
     }
 
     // Inicializar el tablero
-    private void initializeBoard() {
+    public void initializeBoard() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-              board[i][j] = ' '; // Espacios en blanco representan celdas vacías
+              board[i][j] = ' '; 
             }
         }
     }
 
-    // Métodos para obtener y actualizar el tablero
     public char[][] getBoard() {
         return board;
     }
@@ -39,13 +46,11 @@ public class Board {
         board[row][col] = symbol;
     }
 
-    // Métodos para comprobar el estado del juego y gestionar las victorias
     public boolean checkWin(char symbol) {
 
-        return false; // Por ahora, se retorna falso.
+        return false; 
     }
 
-    // De los errores se aprende, intento de conteo de victorias fallido
     public void playerOneWins() {
         playerOneWins++;
     }
